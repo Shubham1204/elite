@@ -54,9 +54,9 @@ h6 {
     display: block;
 }
 
-.row {
+/* .row {
     display: flex;
-}
+} */
 
 .container {
     width: 1100px;
@@ -177,7 +177,7 @@ h6 {
 }
 
 #main-navigation ul li {
-    margin: 0px 20px;
+    margin: 0px auto;
     position: relative;
 }
 
@@ -216,11 +216,64 @@ h6 {
 }
 
 #banner {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
+    /* height: 665px; */
 }
 
 #banner .slide {
     position: relative;
+}
+
+#banner #slide .slide img{
+    width: 100%;
+    height: 665px;
+    /* object-fit: cover; */
+    /* margin-bottom: 20px; */
+    /* position:absolute */
+}
+
+.slider {
+    display: flex;
+    width: 500%;
+    /* height: 60px; */
+    flex-wrap: wrap;
+    /* margin-bottom: 20px; */
+    animation: slider 40s infinite linear;
+}
+
+.slider .slide {
+    width: 20%;
+    /* object-fit: cover; */
+    height: 100%;
+}
+
+/* .slider img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+} */
+
+@keyframes slider {
+    0%,
+    18% {
+        transform: translateX(0%);
+    }
+    20%,
+    38% {
+        transform: translateX(-20%);
+    }
+    40%,
+    58% {
+        transform: translateX(-40%);
+    }
+    60%,
+    78% {
+        transform: translateX(-60%);
+    }
+    80%,
+    100% {
+        transform: translateX(-80%);
+    }
 }
 
 #banner .text-wrapper {
@@ -321,45 +374,10 @@ h6 {
     transform: scale(1.1, 1.3);
 }
 
-.slider {
-    display: flex;
-    width: 500%;
-    flex-wrap: wrap;
-    animation: slider 40s infinite linear;
-}
 
-.slider .slide {
-    width: 20%;
-}
-
-.slider img {
-    width: 100%;
-}
-
-@keyframes slider {
-    0%,
-    18% {
-        transform: translateX(0%);
-    }
-    20%,
-    38% {
-        transform: translateX(-20%);
-    }
-    40%,
-    58% {
-        transform: translateX(-40%);
-    }
-    60%,
-    78% {
-        transform: translateX(-60%);
-    }
-    80%,
-    100% {
-        transform: translateX(-80%);
-    }
-}
 
 #section_1 {
+    /* margin-top: 20px;; */
     margin-bottom: 50px;
 }
 
@@ -455,6 +473,10 @@ h6 {
     border: 8px solid;
     left: 46%;
     border-color: #FC636B transparent transparent;
+}
+
+.tabs #tab .active{
+    margin: 0px auto;
 }
 
 .product {
